@@ -1,0 +1,19 @@
+html
+  head
+    title Adminlte
+    meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false
+    = csrf_meta_tags
+
+  body.login-page
+    .hold-transition
+      .login-box
+        .login-box-body
+          - if alert
+            .alert.alert-warning.alert-dismissible
+              =alert
+          - if notice
+            .alert.alert-success.alert-dismissible
+              =notice
+          = yield

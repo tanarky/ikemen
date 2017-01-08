@@ -1,0 +1,4 @@
+en:
+  permission:
+    need_login: 'Please sign in.'
+  hello: "Hello world"
