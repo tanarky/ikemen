@@ -12,7 +12,8 @@ data = [
   {id: 10, name: '大学',     ancestry: '1/8'},
   {id: 11, name: 'オフィス', ancestry: '1/8'},
   {id: 12, name: '職業',     ancestry: '1/8'},
-
+  {id: 13, name: '戦争',     ancestry: '1/2'},
+  {id: 14, name: '中世',     ancestry: '1/2'},
 ]
 data.each do |d|
   Category.seed do |p|
