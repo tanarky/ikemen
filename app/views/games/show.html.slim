@@ -1,0 +1,30 @@
+ol.breadcrumb
+  - @game.category.path.each do |c|
+    li
+      - if c.id == 1
+        a href="/" トップ
+      - else
+        a href="#"
+          = c.name
+  li.active
+    = @game.name
+
+.media
+  .media-left
+    a href="#"
+      img.media-object src="http://placehold.it/80x80"
+  .media-body
+    h4.media-heading
+      = @game.name
+    - @game.tags.each do |t|
+      span.label.label-success style="margin-right: 10px"
+        = t.name
+br
+ul.nav.nav-tabs
+  li.active role="presentation"
+    a href="#" Home
+  li role="presentation"
+    a href="#" News
+  li role="presentation"
+    a href="#" Messages
+

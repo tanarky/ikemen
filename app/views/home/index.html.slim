@@ -1,14 +1,7 @@
-- if not current_user
-  a.btn.btn-block.btn-social.btn-facebook.btn-flat href="#"
-    i.fa.fa-facebook
-    | Sign in using Facebook
-  a.btn.btn-block.btn-social.btn-google.btn-flat href=user_google_omniauth_authorize_path
-    i.fa.fa-google-plus
-    | Sign in using Google+
-- if current_user
-  a.btn.btn-block.btn-default.btn-flat.sign-out href=destroy_user_session_path
-    i.fa.fa-sign-out
-    | Sign out
-  a.btn.btn-block.btn-default.btn-flat.sign-out href=admin_index_path
-    i.fa.fa-tachometer
-    | Admin Page
+h1
+  | Games
+ul
+  - @games.each do |g|
+    li
+      a href=game_path(g.id)
+        = g.name

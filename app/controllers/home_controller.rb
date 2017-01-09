@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
-  layout 'top'
+  layout 'service'
 
   def index
+    @games = Game.all
   end
 end
