@@ -19,12 +19,68 @@ ol.breadcrumb
     - @game.tags.each do |t|
       span.label.label-success style="margin-right: 10px"
         = t.name
+  .media-left
+    a.btn.btn-primary href="#"
+      i.fa.fa-gamepad style="font-size:20px"
+      | Play Now!
+          
 br
 ul.nav.nav-tabs
   li.active role="presentation"
     a href="#" トップ
+  li.dropdown
+    a.dropdown-toggle data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="dLabel"
+      | どんなゲーム？
+      span.caret
+    ul.dropdown-menu aria-labelledby="dLabel"
+      li.active
+        a href="#"
+          | ストーリー
+      li
+        a href="#"
+          | キャラクター
+      li
+        a href="#"
+          | システム
+            
   li role="presentation"
-    a href="#" どんなゲーム？
-  li role="presentation"
-    a href="#" 交流
+    a href="#" レビュー
 
+  li role="presentation"
+    a href="#" スチル・動画
+
+hr
+
+h2
+  = "#{@game.name} の書き込み"
+= render partial: 'kakikomi'
+= render partial: 'kakikomi'
+= render partial: 'kakikomi'
+
+h2 ニュース
+
+h3 
+  | 2017/01/11 タイトルほげほげ
+h3
+  | 2017/01/10 タイトルほげほげ
+h3
+  | 2017/01/09 タイトルほげほげ
+h3
+  | 2017/01/08 タイトルほげほげ
+h3
+  | 2017/01/07 タイトルほげほげ
+
+h2 掲示板
+
+h3
+  | スレッド1 ああああ
+h3
+  | スレッド2 ああああ
+h3
+  | スレッド3 ああああ
+h3
+  | スレッド4 ああああ
+h3
+  | スレッド5 ああああ
+
+h2 ランキング

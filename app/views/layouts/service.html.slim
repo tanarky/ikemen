@@ -4,9 +4,7 @@ html
     title Service Top
     meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false
-    = javascript_include_tag 'application', 'data-turbolinks-track' => false
     = csrf_meta_tags
-
   body
     = render partial: 'nav'
     .container
@@ -19,3 +17,4 @@ html
             .alert.alert-success.alert-dismissible
               =notice
           = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false
