@@ -49,6 +49,26 @@ ul.nav.nav-tabs
   li role="presentation"
     a href="#" スチル・動画
 
+h2
+  = "#{@game.name} のアプリデータ"
+= render partial: 'app_data'
+
+hr
+
+h2
+  = "#{@game.name} のキャラクター"
+= render partial: 'characters'
+= render partial: 'characters'
+= render partial: 'characters'
+
+hr
+
+
+h2
+  = "#{@game.name} の最新ニュース"
+
+= render partial: 'news_twt'
+
 hr
 
 h2
@@ -57,30 +77,6 @@ h2
 = render partial: 'kakikomi'
 = render partial: 'kakikomi'
 
-h2 ニュース
 
-h3 
-  | 2017/01/11 タイトルほげほげ
-h3
-  | 2017/01/10 タイトルほげほげ
-h3
-  | 2017/01/09 タイトルほげほげ
-h3
-  | 2017/01/08 タイトルほげほげ
-h3
-  | 2017/01/07 タイトルほげほげ
 
-h2 掲示板
 
-h3
-  | スレッド1 ああああ
-h3
-  | スレッド2 ああああ
-h3
-  | スレッド3 ああああ
-h3
-  | スレッド4 ああああ
-h3
-  | スレッド5 ああああ
-
-h2 ランキング
