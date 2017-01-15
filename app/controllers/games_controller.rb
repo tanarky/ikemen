@@ -1,8 +1,17 @@
 class GamesController < ApplicationController
   layout 'service'
-  before_action :set_game, only: [:show]
+  before_action :set_game, only: [:show, :characters, :data]
 
   def show
+    @T[:active_num] = 10
+  end
+
+  def characters
+    @T[:active_num] = 20
+  end
+
+  def data
+    @T[:active_num] = 22
   end
 
   private

@@ -1,0 +1,42 @@
+ul.nav.nav-tabs
+  li class=(active_num == 10 ? 'active': '') role="presentation"
+    a href=game_path(game.id) トップ
+
+  li class=(20 <= active_num and active_num < 30 ? 'active': '')
+    a.dropdown-toggle data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav20"
+      | ゲームデータ
+      span.caret
+    ul.dropdown-menu aria-labelledby="nav20"
+      li class=(active_num == 20 ? 'active': '')
+        a href=characters_game_path(game.id)
+          | キャラクター
+      li class=(active_num == 22 ? 'active': '')
+        a href=data_game_path(game.id)
+          | ストア
+            
+  li class=(30 <= active_num and active_num < 40 ? 'active': '')
+    a.dropdown-toggle data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav30"
+      | 投稿
+      span.caret
+    ul.dropdown-menu aria-labelledby="nav30"
+      li class=(active_num == 30 ? 'active': '')
+        a href="#"
+          | 攻略
+      li class=(active_num == 31 ? 'active': '')
+        a href="#"
+          | 雑談
+      li class=(active_num == 32 ? 'active': '')
+        a href="#"
+          | 質問
+
+  li class=(40 <= active_num and active_num < 50 ? 'active': '')
+    a.dropdown-toggle data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="nav40"
+      | スチル
+      span.caret
+    ul.dropdown-menu aria-labelledby="nav40"
+      li class=(active_num == 40 ? 'active': '')
+        a href="#"
+          | 画像
+      li class=(active_num == 41 ? 'active': '')
+        a href="#"
+          | 動画

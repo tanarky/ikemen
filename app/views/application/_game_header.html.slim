@@ -1,0 +1,20 @@
+.media
+  .media-left
+    a href="#"
+      img.media-object.game-icon src=icon_url
+  .media-body
+    h4.media-heading
+      = game.name
+    - game.tags.each do |t|
+      span.label.label-success style="margin-right: 10px"
+        = t.name
+  .media-left
+    a.btn.btn-primary.btn-sm href="#" style="width:110px"
+      i.fa.fa-gamepad style="font-size:18px"
+      | 起動する
+    br
+    a.btn.btn-danger.btn-sm href="#" style="width:110px;margin-top:5px;"
+      i.fa.fa-heart style="font-size:14px"
+      | お気に入り
+
+br

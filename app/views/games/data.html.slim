@@ -3,12 +3,7 @@
 = render partial: 'game_nav', locals: {active_num: @T[:active_num], game: @game}
 
 h2
-  = "#{@game.name} の最新情報"
-
-h3 最新の書き込み
-= render partial: 'kakikomi'
-
-h3 最新のニュース
-= render partial: 'news_twt'
+  = "#{@game.name} のアプリデータ"
+= render partial: 'app_data'
 
 hr

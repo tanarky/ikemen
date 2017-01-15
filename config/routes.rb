@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   end
 
   resources :games, only: [:index, :show] do
+    get 'data', :on => :member
+    get 'characters', :on => :member
+    get 'about', :on => :member
+    get 'events', :on => :member
   end
 
   root to: 'home#index'

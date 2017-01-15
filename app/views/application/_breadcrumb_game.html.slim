@@ -1,0 +1,10 @@
+ol.breadcrumb
+  - game.category.path.each do |c|
+    li
+      - if c.id == 1
+        a href="/" トップ
+      - else
+        a href="#"
+          = c.name
+  li.active
+    = game.name

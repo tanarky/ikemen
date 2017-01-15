@@ -10,6 +10,7 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: subpixel-antialiased;
+    margin-top: 60px;
 }
 .main-header .sidebar-toggle {
     padding: 14px;
@@ -49,7 +50,7 @@ img.game-icon {
 .chat-msg:after {
     content: "";
     position: absolute;
-    top: 30%;
+    top: 30px;
     left: -10px;
     margin-top: -10px;
     display: block;
